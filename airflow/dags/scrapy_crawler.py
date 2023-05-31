@@ -6,11 +6,8 @@ from scrapy.crawler import CrawlerProcess
 sys.path.extend(["/home/ubuntu/airflow/dags/scraper/pst_ag_project/"])
 from scraper.pst_ag_project.pst_ag_project.spiders import rwjst_spider
 
-AWS_ACCESS_KEY_ID="AKIAZEGGTIXN753UASFJ"
-AWS_SECRET_ACCESS_KEY="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"
-
-#AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-#AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
 def run_crawler():
 

@@ -1,6 +1,9 @@
 # aws-datapipeline-scrapy
 
+### Technologies used
 
+-   **Apache Airflow**: Apache Airflow is an open-source platform for authoring, scheduling and monitoring data and computing workflows. For this project it was used to manage data extraction and transformation process
+-   
 Introducing a Data Pipeline Project that integrates Airflow for Data Orchestration
 
 Technologies used

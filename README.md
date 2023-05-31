@@ -53,6 +53,8 @@ Data was scraped from  [this website](https://rewardsforjustice.net/index/?jsf=j
 4.  Create S3 Bucket and IAM role to enable access to s3 from any instance, take note of the AWS key and secret key  
 ![s3_bucket](https://github.com/sree445/aws-datapipeline-scrapy/assets/32360977/5c8f194a-42c7-40f8-8a8a-a396dc925150)
      
+ ![security_groups](https://github.com/sree445/aws-datapipeline-scrapy/assets/32360977/3008e6a7-483f-4b7a-86fb-0b12c6093e40)
+
     
 5.  Set up AWS SQS for all bucket create operations  
     To enable the bucket to notify Snowpipe when new data arrives. This can be done by executing the query “show pipes;” in snowflakes worksheet, copying the notification_channel(ARN) value from the newly created pipe, and pasting it into the AWS SQS.

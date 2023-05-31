@@ -10,7 +10,6 @@ AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
 def run_crawler():
-
     current_datetime = datetime.datetime.now()
     file_date = current_datetime.strftime("%Y-%m-%d:%H-%M-%S")
     process = CrawlerProcess(

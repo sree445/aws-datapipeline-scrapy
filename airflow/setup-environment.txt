@@ -1,0 +1,31 @@
+#follow steps to setup environment and configure airflow
+sudo apt-get update
+yes |sudo apt install python3-pip
+pip install scrapy
+pip install apache-airflow[AWS]
+sudo apt-get install postgresql postgresql-contrib
+pip install psycopg2-binary
+
+echo -e "apache-airflow==2.6.1\nScrapy==2.9.0\ns3fs==2023.5.0\nbotocore==1.29.76" > requirements.txt
+
+pip install -r requirements.txt
+airflow
+cd airflow
+
+sudo -i -u postgres
+psql
+CREATE DATABASE airflow;
+CREATE USER airflow WITH PASSWORD 'airflow';
+GRANT ALL PRIVILEGES ON DATABASE airflow TO airflow;
+\l;
+\c airflow;
+\dt;
+
+sed -i 's#sqlite:////home/ubuntu/airflow/airflow.db#postgresql+psycopg2://airflow:airflow@localhost/airflow#g' airflow.cfg
+sed -i 's#SequentialExecutor#LocalExecutor#g' airflow.cfg
+
+airflow db init
+airflow webserver -p 8070 &
+airflow users  create --role Admin --username admin --email mailid --firstname admin --lastname admin --password admin
+airflow scheduler &
+

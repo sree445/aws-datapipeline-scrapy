@@ -64,10 +64,8 @@ Data was scraped from  [this website](https://rewardsforjustice.net/index/?jsf=j
 [![](https://github.com/priye-1/airflow_data_pipeline/raw/master/readme_images/pipeline.png)](https://github.com/priye-1/airflow_data_pipeline/blob/master/readme_images/pipeline.png)
 
   
-
-[![](https://github.com/priye-1/airflow_data_pipeline/raw/master/readme_images/snowflakes.png)](https://github.com/priye-1/airflow_data_pipeline/blob/master/readme_images/snowflakes.png)
-
-  
+![Screenshot 2023-05-31 154420](https://github.com/sree445/aws-datapipeline-scrapy/assets/32360977/d5ba0513-18e0-4666-b0ca-9b4565542bd5)
+ 
 
 #### [](https://github.com/priye-1/airflow_data_pipeline/blob/master/readme.md#pipeline-flow)Pipeline Flow
 

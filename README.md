@@ -55,7 +55,8 @@ Data was scraped from  [this website](https://rewardsforjustice.net/index/?jsf=j
      
     
 5.  Set up AWS SQS for all bucket create operations  
-    To enable the bucket to notify Snowpipe when new data arrives. This can be done by executing the query “show pipes;” in snowflakes worksheet, copying the notification_channel(ARN) value from the newly created pipe, and pasting it into the AWS SQS.  [![](https://github.com/priye-1/airflow_data_pipeline/raw/master/readme_images/event.png)](https://github.com/priye-1/airflow_data_pipeline/blob/master/readme_images/event.png)  
+    To enable the bucket to notify Snowpipe when new data arrives. This can be done by executing the query “show pipes;” in snowflakes worksheet, copying the notification_channel(ARN) value from the newly created pipe, and pasting it into the AWS SQS.
+    ![sqs_s3_event](https://github.com/sree445/aws-datapipeline-scrapy/assets/32360977/a22cea9c-f67b-4fa4-a84c-eec856368063)
       
     
 6.  Trigger dag manually from the UI and access Snowflake worksheet to preview data, with time the number of rows increases if airflow task is set to run on a schedule.  
